@@ -1,5 +1,4 @@
-Sam Lee - hsl2113 - Programming Assignment 2 
-README 
+Sam Lee 
 
 ----------------- Description -------------------------------
 1. (a)My sender.py file handles the sending of the files. The MSS is set to 576, since the “TCP” header takes 20 bytes, it essentially breaks up the files into 556 byte chunks. The window size is hard coded and set to 1, I did not implement a variable window size. No matter what number you enter for the window size it will always be 1. Sender.py opens 2 files, the file to be transferred and the log file or stdout, if the file to be transferred is not found it exits with an IOException. Opens the TCP ACK socket and starts sending UDP sockets to the receiver. Read the file into ‘i’ chunks, and then send ‘j’ packets matching ‘i’. Calculate the RTT stats based on the sample RTTs collected. Lastly send the ‘fin’ packet so that the receiver knows no more packets are coming, and close all files and sockets.
@@ -51,5 +50,3 @@ python sender.py test.JPG localhost 4199 5000 stdout 1
 python receiver.py file_received 4199 localhost 5000 log
 
 
------------------ Additional Features ------------------------
-4. I did not implement any additional functionalities
