@@ -15,8 +15,8 @@ def main(argv):
 		sys.exit()
 	# create connection to AWS
 	conn = boto.ec2.connect_to_region('us-west-2',
-		aws_access_key_id='AKIAI6GDBSTDPTJE6SQA',
-		aws_secret_access_key= '0d4lUQqrv0+sHt80mhPupozhnSfYmt+/5kgqcoAu')
+		aws_access_key_id='ENTER your KEY ID',
+		aws_secret_access_key= 'ENTER your ACCESS KEY')
 
 	# # create security group
 	secName = 'Sam-%d' % int(time.time())
