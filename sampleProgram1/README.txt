@@ -1,5 +1,5 @@
-Sam Lee - hsl2113 - Programming Assignment 1 
-README 
+Sam Lee 
+
 
 ----------------- Description -------------------------------
 1. My server.py file includes the server code which handles all input from clients, parses it, and implements the commands as specified. The client.py file creates socket to connect to the server and basically just relays input and output from the user via stdin and the server via the socket.
@@ -42,5 +42,4 @@ $python server.py <port number>
  $python client.py <server host> <server port>
 
 
------------------ Additional Features ------------------------
-4. I did not implement any additional functionalities
+
